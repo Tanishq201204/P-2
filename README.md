@@ -1,2 +1,2 @@
-# P-2
+# Practicals 
 Portfolio
