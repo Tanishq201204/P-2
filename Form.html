@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dr. M.K. Umate College Admission Form</title>
+    <style>
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom:   
+ 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;   
+
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dr. M.K. Umate College Admission Form</h1>
+    <form action="submit.php" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>   
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for="gender">Gender:</label>   
+
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>   
+
+            </select><br>  
+ Number:</label>
+            <input type="tel" id="mobile" name="mobile" required><br>
+            <label for="email">Email   
+ ID:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>   
+
+            <label   
+ for="abc_id">ABC ID:</label>
+            <input type="text" id="abc_id" name="abc_id"><br>
+            <label for="aadhaar">Aadhar Card Number:</label>
+            <input type="text" id="aadhaar" name="aadhaar"><br>
+            <label for="cast">Caste:</label>
+            <input type="text" id="cast" name="cast">
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="-select-">-select-</option> 
+                <option value="B.C.C.A">B.C.C.A</option>   
+                <option value="B.Com(Eng)">B.Com(Eng)</option>   
+                <option value="B.Com(Marathi)">B.Com(Marathi)</option>   
+                <option value="B.A(Marathi)">B.A(Marathi)</option>   
+                <option value="M.Com(Marathi)">M.Com(Marathi)</option>   
+                <option value="M.A(Eng)">M.A(Eng)</option>   
+                <option value="M.C.M(Eng)">M.C.M(Eng)</option>   
+            </select><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="button" value="Save">
+    </form>
+</body>
+</html>
